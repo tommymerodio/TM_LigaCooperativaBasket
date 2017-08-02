@@ -16,6 +16,10 @@
 		09BCAFB41EF18B67000545A0 /* TM_LigaCooperativaBasket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09BCAFB21EF18B67000545A0 /* TM_LigaCooperativaBasket.xcdatamodeld */; };
 		09BCAFB61EF18B67000545A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BCAFB51EF18B67000545A0 /* Assets.xcassets */; };
 		09BCAFB91EF18B67000545A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BCAFB71EF18B67000545A0 /* LaunchScreen.storyboard */; };
+		09BF471C1F2A481E00AE2CB5 /* TM_ClasificacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF471B1F2A481E00AE2CB5 /* TM_ClasificacionViewController.swift */; };
+		09BF47201F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BF471E1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.swift */; };
+		09BF47211F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BF471F1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.xib */; };
+		09C224971F0D3E40003DFD6B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C224961F0D3E40003DFD6B /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		09BCAFB51EF18B67000545A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09BCAFB81EF18B67000545A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BCAFBA1EF18B67000545A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BF471B1F2A481E00AE2CB5 /* TM_ClasificacionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TM_ClasificacionViewController.swift; sourceTree = "<group>"; };
+		09BF471E1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TM_ClasificacionTableCell.swift; sourceTree = "<group>"; };
+		09BF471F1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TM_ClasificacionTableCell.xib; sourceTree = "<group>"; };
+		09C224961F0D3E40003DFD6B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,14 +82,26 @@
 			isa = PBXGroup;
 			children = (
 				09BCAFAB1EF18B67000545A0 /* AppDelegate.swift */,
+				09C224961F0D3E40003DFD6B /* Utils.swift */,
+				09BF471D1F2A482300AE2CB5 /* CLASIFICACION */,
 				09BACB671EF832260026D977 /* LOGIN_VC */,
-				09BCAFB51EF18B67000545A0 /* Assets.xcassets */,
 				092020831EFC29E700E7974D /* Main.storyboard */,
 				09BCAFB71EF18B67000545A0 /* LaunchScreen.storyboard */,
+				09BCAFB51EF18B67000545A0 /* Assets.xcassets */,
 				09BCAFBA1EF18B67000545A0 /* Info.plist */,
 				09BCAFB21EF18B67000545A0 /* TM_LigaCooperativaBasket.xcdatamodeld */,
 			);
 			path = TM_LigaCooperativaBasket;
+			sourceTree = "<group>";
+		};
+		09BF471D1F2A482300AE2CB5 /* CLASIFICACION */ = {
+			isa = PBXGroup;
+			children = (
+				09BF471B1F2A481E00AE2CB5 /* TM_ClasificacionViewController.swift */,
+				09BF471E1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.swift */,
+				09BF471F1F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.xib */,
+			);
+			name = CLASIFICACION;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +165,7 @@
 			files = (
 				092020851EFC29E700E7974D /* Main.storyboard in Resources */,
 				09BCAFB91EF18B67000545A0 /* LaunchScreen.storyboard in Resources */,
+				09BF47211F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.xib in Resources */,
 				09BCAFB61EF18B67000545A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,8 +180,11 @@
 				09BCAFAC1EF18B67000545A0 /* AppDelegate.swift in Sources */,
 				092020821EFC24AF00E7974D /* TM_RecuperarContraseñaVC.swift in Sources */,
 				091779D61EFAD3C900D07333 /* TM_RecuperarPasswordVC.swift in Sources */,
+				09C224971F0D3E40003DFD6B /* Utils.swift in Sources */,
 				09BCAFB41EF18B67000545A0 /* TM_LigaCooperativaBasket.xcdatamodeld in Sources */,
 				09BACB661EF82EBB0026D977 /* TM_LoginVC.swift in Sources */,
+				09BF471C1F2A481E00AE2CB5 /* TM_ClasificacionViewController.swift in Sources */,
+				09BF47201F2A4DA100AE2CB5 /* TM_ClasificacionTableCell.swift in Sources */,
 				091779D41EFAD39300D07333 /* TM_RegistroNuevoUsuarioVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

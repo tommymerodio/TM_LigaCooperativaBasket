@@ -12,6 +12,7 @@ class TM_RecuperarPasswordVC: UIViewController {
 
     //MARK: - IBOUTLETS
     
+    @IBOutlet weak var myEmailTF: UITextField!
     
     
     
@@ -20,8 +21,15 @@ class TM_RecuperarPasswordVC: UIViewController {
     
     
     @IBAction func volverButton(_ sender: AnyObject) {
-        
+        dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func recuperarBTN(_ sender: AnyObject) {
+        if myEmailTF.text == ""{
+            present(muestraVC("Error", messageData: "Debes escribir tu email"), animated: true, completion: nil)
+        }
+    }
+    
     
     
     
@@ -37,14 +45,17 @@ class TM_RecuperarPasswordVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: - UTILS
+    
+    //Ocultar teclado
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
+    
+    func muestraVC(_ titleData : String, messageData : String) -> UIAlertController{
+        let alertVC = UIAlertController(title: titleData, message: messageData, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alertVC
+    }
 
 }

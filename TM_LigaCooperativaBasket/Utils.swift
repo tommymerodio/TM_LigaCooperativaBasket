@@ -16,6 +16,17 @@ import UIKit
 }
 */
 
+/*
+ //ocultar teclado tocando en cualquier parte de la pantalla
+ func hideKeyBoardWhenUserTappedView(){
+ //hacemos un bucle para controlar y saber cuales objetos son textField
+ for c_view in self.view.subviews{
+ if let textFiled = c_view as? UITextField{
+ textFiled.resignFirstResponder()
+ }
+ }
+*/
+
 
 
 //------------- MOSTRAR MENSAJE -------------//
@@ -92,3 +103,9 @@ import UIKit
         dismiss(animated: true, completion: nil)
     }
 }*/
+
+
+
+
+
+
